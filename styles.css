@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.pag-completa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.barra-superior {
+    height: 10vh;
+}
+
+.contenedor-imagen {
+    height: 35vh;
+    padding-top: 100px;
+}
+
+.contenedor-imagen img {
+    align-self: flex-end;
+}
