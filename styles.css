@@ -23,9 +23,9 @@
 }
 
 #sign-in-btn {
-    background-color: rgb(60, 60, 236);
+    background-color: #1A73E8;
     color: #fff;
-    width: 5vw;
+    width: 4vw;
     border-radius: 5px;
     text-align: center;
 }
@@ -35,10 +35,51 @@
     text-decoration: underline;
 }
 
+.image-container {
+    height: 35vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+
 .search-bar {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+}
+
+div .search-input {
+    display: flex;
+    justify-content: center;
+    width: 580px;
+    border: solid #e7e7e7 1px;
+    border-radius: 20px;
+    height: 40px;
+}
+
+div .search-input:hover {
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.search-img {
+    margin: auto;
+}
+
+.search-input input {
+    width: 500px;
+    height: 35px;
+    border: none;
+}
+
+.search-btn {
+    height: 40px;
+    width: 150px;
+    padding: 0px 16px;
+    background-color: #F9F8FA;
+    border: none;
+    margin: 10px;
+    font-size: 15px;
 }
 
 footer {
@@ -51,18 +92,46 @@ footer {
     font-size: 15px;
 }
 
-footer div {
+
+/*footer div {
     padding: 10px;
+}*/
+
+.location-box {
+    border-bottom: 1px solid #dadce0;
+    padding: 15px 30px;
 }
 
 .about-box {
+    height: 50px;
     border-top: #333;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    border-top: rgba(0,0,0, .5);
 }
 
 .about-box a {
     text-decoration: none;
     color: rgba(0,0,0,.54);
+    padding: 0 20px;
+}
+
+.left-links {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    padding: 15px 20px;
+}
+
+.right-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.about-box a:hover {
+    text-decoration: underline;
 }
