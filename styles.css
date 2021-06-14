@@ -6,36 +6,41 @@
 body {
     width: 100%;
     height: 100%;
-}
-
-
-.full-page {
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.full-page nav {
-    width: 100%;
+
+nav .upper-btns {
+    width: 100vw;
+    height: 60px;
+    padding: 6px;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-    height: 48px;
+    box-sizing: border-box;
 }
 
-.full-page nav a {
-    display: inline-block;
-    text-decoration: none;
+nav .upper-btns a{
     color: #000;
     font-size: 13px;
-    padding: 9px 23px;
+    padding: 9px 15px 9px 15px;
     text-align: center;
-}
-
-nav a .upper-btn {
-    padding-top: 10px;
+    text-decoration: none;
 }
 
 #sign-in-btn {
+    background-color: #1A73E8;
+    color: #fff;
+    border-radius: 5px;
+    height: 36px;
+    width: 100px;
+    box-sizing: border-box;
+}
+
+/*#sign-in-btn {
     background-color: #1A73E8;
     color: #fff;
     width: 100px;
@@ -45,7 +50,7 @@ nav a .upper-btn {
     border-radius: 5px;
     text-align: center;
     box-sizing: border-box;
-}
+}*/
 
  nav a:hover {
     cursor: pointer;
@@ -53,27 +58,25 @@ nav a .upper-btn {
 }
 
 .image-container {
-    height: 35vh;
+    height: 180px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    box-sizing: border-box;
     align-items: flex-end;
 }
 
 .google-logo {
-    padding: 30px;
     width: auto;
     max-width:100%;
     height:auto;
 }
-
 
 .search-bar {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding: 20px;
 }
 
 div .search-input {
@@ -106,26 +109,27 @@ div .search-input:hover {
     outline: #fff;
 }
 
-
-
 .search-btn {
     height: 40px;
     width: 150px;
     padding: 0px 16px;
     background-color: #F9F8FA;
+    color: #3c4043;
     border: none;
     margin: 10px;
     font-size: 15px;
 }
 
 .blank-container {
-    height: 40vh;
+    flex-shrink: 0;
+    flex-grow: 1;
+    box-sizing: border-box;
 }
 
 footer {
     background-color: #f2f2f2;
     color: rgba(0,0,0,.54);
-    position: absolute;
+    position: fixed;
     box-sizing: border-box;
     width: 100%;
     height: 100px;
@@ -137,6 +141,7 @@ footer {
 .location-box {
     border-bottom: 1px solid #dadce0;
     padding: 15px 30px;
+    box-sizing: border-box;
 }
 
 .about-box {
@@ -160,6 +165,7 @@ footer {
     align-items: center;
     flex: 1;
     padding: 15px 20px;
+    flex-wrap: wrap;
 }
 
 .right-links {
@@ -167,6 +173,7 @@ footer {
     justify-content: flex-end;
     align-items: center;
     padding: 15px 20px;
+    flex-wrap: wrap;
 }
 
 .about-box a:hover {
