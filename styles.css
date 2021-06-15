@@ -95,6 +95,7 @@ div .search-input:hover {
 }
 
 .search-img {
+    box-sizing: border-box;
     margin: auto;
     padding: 10px;
 }
